@@ -102,7 +102,7 @@ security:
       user-info-uri: http://paascloud-gateway:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://paascloud-provider-uac:8000/oauth/token_key
+        key-uri: http://paascloud-provider-uac:8000/oauth/token_key # 网关依赖uac服务 ，所以需要优先启动uac服务
 
 proxy:
   auth:
